@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/25c982b2fa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Shose</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__form">
+                <a href="#">Đăng Nhập</a>
+                /
+                <a href="#">Đăng Ký</a>
+            </div>
+            <h3 class="header__title">
+                Sport Shoes
+            </h3>
+            <div class="header__right">
+                <button class="search">
+                    <i class="fas fa-search"></i>
+                </button>
+                |
+                <a href="#" class="cart">
+                    Giỏ Hàng / 0đ
+                    <i class="fas fa-cart-plus"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="menu">
+        <div class="menu__container container">
+            <ul class="menu__ul">
+                <li>
+                    <div>
+                        <a href="#">
+                            Trang Chủ
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            Giới Thiệu
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            Nữ
+                        </a>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul>
+                        <li>Classic</li>
+                        <li>Classic</li>
+                        <li>Classic</li>
+                        <li>Classic</li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            Nam
+                        </a>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul>
+                        <li>Classic</li>
+                        <li>Classic</li>
+                        <li>Classic</li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            Tin Tức
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#">
+                            Liên Hệ
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide container carousel__fix" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel__bg" id="carousel__bg1"></div>
+                <div class="carousel__text carousel1__text__inner">
+                    <h1>MONA SNE<i class="fa fa-star-o" aria-hidden="true"></i>KER</h1>
+                    <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng
+                        mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel__bg" id="carousel__bg2"></div>
+                <div class="carousel__text carousel2__text__inner">
+                    <h1>MONA SNE<i class="fa fa-star-o" aria-hidden="true"></i>KER</h1>
+                    <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng
+                        chứng
+                        mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="carousel__bg" id="carousel__bg3"></div>
+                <div class="carousel__text carousel3__text__left">
+                    <h1>MONA SNE<i class="fa fa-star-o" aria-hidden="true"></i>KER</h1>
+                </div>
+
+                <div class="carousel__text carousel3__text__right">
+                    <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng
+                        chứng
+                        mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

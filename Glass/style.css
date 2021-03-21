@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #65dfc9, #65dfc9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass {
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    min-height: 80vh;
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+
+}
+
+.circle1 {
+    bottom: 5%;
+    left: 12%;
+}
+
+.circle2 {
+    top: 2%;
+    right: 10%;
+}
+
+.dashboard {
+    flex: 1;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.user {
+    margin: 40px 0px 80px 0px;
+    text-align: center;
+}
+
+.user h2 {
+    color: #426696;
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+.user p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.link {
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.link>h2 {
+    color: #658ec6;
+    padding: 0px 40px;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    margin-bottom: 50px;
+    border-radius: 2rem;
+    color: white;
+    width: 100%;
+    font-weight: 800;
+    height: 150px;
+    position: relative;
+}
+
+.pro h2 {
+    padding-top: 30px;
+    width: 50%;
+    opacity: 0.8;
+    height: 100%;
+    padding-left: 5px;
+
+}
+
+.pro img {
+    position: absolute;
+    top: -3%;
+    right: 0%;
+}
+
+.games {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.status {
+    color: #658ec6;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+.status input {
+    width: 35%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    min-height: 30px;
+    border: none;
+    border-radius: 2rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-info {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.card-info .progress {
+    height: 30px;
+    width: 100%;
+    background: rgb(236, 236, 236);
+    border-radius: 2rem;
+    position: relative;
+}
+
+.progress::after {
+    content: '';
+    width: 60%;
+    height: 30px;
+    position: absolute;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+}
+
+.percentage {
+    color: #65dfc9;
+    font-weight: bold;
+    opacity: 0.8;
+}

@@ -1,0 +1,331 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* container */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* header */
+header,
+header a {
+    background-color: #000;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.header__title {
+    color: #fff;
+    font-size: 35px;
+    margin: 15px 0px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    font-size: 13px;
+}
+
+.header__form a {
+    font-weight: 700;
+    transition: color .4 ease-in-out;
+}
+
+.header__form a:hover {
+    color: #fff;
+}
+
+.header__right button {
+    border: none;
+    background: #000;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    margin-right: 10px;
+    outline: none;
+    transition: color .4 ease-in-out;
+}
+
+.header__right button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.header__right button:focus {
+    outline: none;
+}
+
+.header__right a {
+    margin-left: 10px;
+    font-weight: 700;
+    transition: color .4 ease-in-out;
+}
+
+.header__right a:hover {
+    color: #fff;
+}
+
+/* nav */
+nav {
+    background-color: #dcdcdc;
+    min-height: 40px;
+}
+
+nav .menu__container .menu__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px
+}
+
+nav .menu__container .menu__ul>li {
+    padding: 10px;
+    margin: 0px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 40px;
+    position: relative;
+    text-align: center;
+}
+
+nav .menu__container .menu__ul li a {
+    color: black;
+    width: 0%;
+    border-bottom: 3px solid red;
+    border-width: 0px;
+    transition: width 2s;
+}
+
+nav .menu__container .menu__ul:hover {
+    cursor: pointer;
+}
+
+nav .menu__container .menu__ul li div {
+    position: relative;
+    width: 100%;
+}
+
+nav .menu__container .menu__ul li div::after {
+    content: '';
+    width: 0%;
+}
+
+nav .menu__container .menu__ul li div:hover::after,
+nav .menu__container .menu__ul li:hover div::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    display: block;
+    bottom: -6px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+
+nav .menu__container .menu__ul li ul>li {
+    margin: 0px;
+    text-align: start;
+    display: none;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+nav .menu__container .menu__ul li:hover ul {
+    border: 1px solid rgba(102, 102, 102, 0.5);
+    background-color: white;
+    position: absolute;
+    margin-top: 6px;
+    min-width: 150px;
+    margin-left: -15px;
+}
+
+nav .menu__container .menu__ul li:hover ul>li {
+    display: inline-block;
+    color: rgba(102, 102, 102, 0.85);
+    font-size: 13px;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+    width: 95%;
+    padding: 10px;
+}
+
+nav .menu__container .menu__ul li ul {
+    z-index: 100;
+}
+
+nav .menu__container .menu__ul li ul>li:hover {
+    color: red;
+    transition: 0.4s ease-in-out;
+}
+
+nav .menu__ul i {
+    padding: 0px 5px;
+    color: gray;
+}
+
+/* carousel */
+#carousel__bg1 {
+    background-image: url("./assets/slide-1.jpg");
+
+}
+
+#carousel__bg2 {
+    background-image: url("./assets/slide-2.jpg");
+}
+
+#carousel__bg3 {
+    background-image: url("./assets/slide-3.jpg");
+}
+
+.carousel__bg {
+    width: 100%;
+    height: 540px;
+    max-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.carousel__fix {
+    padding: 0px;
+    margin: 30px auto;
+}
+
+.carousel__text {
+    z-index: 100;
+    position: absolute;
+    color: white;
+}
+
+.carousel1__text__inner {
+    top: 150px;
+    left: 170px;
+    width: 50%;
+}
+
+.carousel1__text__inner h1 {
+    font-weight: bold;
+    padding: 10px 0px;
+    letter-spacing: 10px;
+}
+
+.carousel1__text__inner p {
+    font-weight: 600;
+    word-break: keep-all;
+    font-size: 20px;
+}
+
+
+.carousel2__text__inner {
+    top: 100px;
+    right: 120px;
+    text-align: end;
+    width: 40%;
+
+}
+
+.carousel2__text__inner h1 {
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding: 15px 0px;
+}
+
+
+.carousel2__text__inner p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.carousel3__text__left {
+    width: 50%;
+    top: 50px;
+    left: 100px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.carousel3__text__right {
+    top: 20px;
+    width: 30%;
+    font-weight: 600;
+    right: 65px;
+}
